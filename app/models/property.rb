@@ -1,3 +1,4 @@
 class Property < ApplicationRecord
-  belongs_to :station
+  has_many :stations
+  accepts_nested_attributes_for :stations
 end

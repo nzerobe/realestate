@@ -17,9 +17,8 @@ class PropertiesTest < ApplicationSystemTestCase
     fill_in "Address", with: @property.address
     fill_in "Building age", with: @property.building_age
     fill_in "Property", with: @property.property
-    fill_in "Remark", with: @property.remark
+    fill_in "Remarks", with: @property.remarks
     fill_in "Rent", with: @property.rent
-    fill_in "Station", with: @property.station_id
     click_on "Create Property"
 
     assert_text "Property was successfully created"
@@ -33,9 +32,8 @@ class PropertiesTest < ApplicationSystemTestCase
     fill_in "Address", with: @property.address
     fill_in "Building age", with: @property.building_age
     fill_in "Property", with: @property.property
-    fill_in "Remark", with: @property.remark
+    fill_in "Remarks", with: @property.remarks
     fill_in "Rent", with: @property.rent
-    fill_in "Station", with: @property.station_id
     click_on "Update Property"
 
     assert_text "Property was successfully updated"

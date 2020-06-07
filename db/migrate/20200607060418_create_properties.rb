@@ -5,8 +5,7 @@ class CreateProperties < ActiveRecord::Migration[5.2]
       t.integer :rent
       t.string :address
       t.integer :building_age
-      t.text :remark
-      t.references :station, foreign_key: true
+      t.text :remarks
 
       t.timestamps
     end

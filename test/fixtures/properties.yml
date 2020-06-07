@@ -5,13 +5,11 @@ one:
   rent: 1
   address: MyString
   building_age: 1
-  remark: MyText
-  station: one
+  remarks: MyText
 
 two:
   property: MyString
   rent: 1
   address: MyString
   building_age: 1
-  remark: MyText
-  station: two
+  remarks: MyText
