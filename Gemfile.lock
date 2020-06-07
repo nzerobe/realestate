@@ -1,7 +1,6 @@
 GIT
-  remote: https://github.com/larskanis/sqlite3-ruby
-  revision: 1027509079176fcc4088dcc7638101cde617cf16
-  branch: add-gemspec
+  remote: https://github.com/sparklemotion/sqlite3-ruby
+  revision: b98034d1fdaa94cd4ae76bbfa0ac56dd8dcc3cf5
   specs:
     sqlite3 (1.3.13.20180326210955)
 
@@ -162,7 +161,6 @@ GEM
       tzinfo (>= 1.0.0)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
-    wdm (0.1.1)
     web-console (3.7.0)
       actionview (>= 5.0)
       activemodel (>= 5.0)
@@ -191,7 +189,6 @@ DEPENDENCIES
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
-  wdm (>= 0.1.0)
   web-console
 
 BUNDLED WITH
