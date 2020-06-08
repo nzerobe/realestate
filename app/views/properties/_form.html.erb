@@ -35,7 +35,26 @@
     <%= form.label :remarks %>
     <%= form.text_area :remarks %>
   </div>
+  <hr>
+ 
+  <%= form.fields_for :stations do |station|%>
+    <h3>Nearest station</h3>
+    <div class="field">
+      <%= station.label :railway %>
+      <%= station.text_field :railway %>
+    </div>
 
+    <div class="field">
+      <%= station.label :name %>
+      <%= station.text_field :name %>
+    </div>
+
+    <div class="field">
+      <%= station.label :distance %>
+      <%= station.text_field :distance %>
+    </div>
+
+  <%end%>
   <div class="actions">
     <%= form.submit %>
   </div>

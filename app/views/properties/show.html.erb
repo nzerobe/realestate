@@ -24,6 +24,16 @@
   <strong>Remarks:</strong>
   <%= @property.remarks %>
 </p>
+<hr>
+
+<p>
+  <% @property.stations.each do |f| %>
+  <h3>Nearest station</h3>
+    Name of railway line: <%=f.railway%> <br>
+    Station name: <%=f.name%><br>
+    How many minutes walk: <%=f.distance%> minutes
+  <%end%>
+</p>
 
 <%= link_to 'Edit', edit_property_path(@property) %> |
 <%= link_to 'Back', properties_path %>
