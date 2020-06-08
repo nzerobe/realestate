@@ -18,7 +18,7 @@
 
   <div class="field">
     <%= form.label :rent %>
-    <%= form.number_field :rent %>
+    <%= form.number_field :rent %> yen
   </div>
 
   <div class="field">
@@ -28,7 +28,7 @@
 
   <div class="field">
     <%= form.label :building_age %>
-    <%= form.number_field :building_age %>
+    <%= form.number_field :building_age %> year/years old
   </div>
 
   <div class="field">
@@ -40,22 +40,22 @@
   <%= form.fields_for :stations do |station|%>
     <h3>Nearest station</h3>
     <div class="field">
-      <%= station.label :railway %>
+      <%= station.label :railway, "Name of railway line" %>
       <%= station.text_field :railway %>
     </div>
 
     <div class="field">
-      <%= station.label :name %>
+      <%= station.label :name, "Station name" %>
       <%= station.text_field :name %>
     </div>
 
     <div class="field">
-      <%= station.label :distance %>
-      <%= station.text_field :distance %>
+      <%= station.label :distance, "How many minutes walk" %>
+      <%= station.text_field :distance %> min/mins
     </div>
 
   <%end%>
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Register" %>
   </div>
 <% end %>
