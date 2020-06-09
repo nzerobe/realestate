@@ -27,11 +27,12 @@
 <hr>
 
 <p>
-  <% @property.stations.each do |f| %>
-  <h3>Nearest station</h3>
+  
+  <% @property.stations.order(:distance).limit(2).each do |f| %>
+  <h3>Nearest station </h3>
     Name of railway line: <%=f.railway%> <br>
     Station name: <%=f.name%><br>
-    How many minutes walk: <%=f.distance%> minutes
+    How many minutes walk: <%=f.distance%> min/mins
   <%end%>
 </p>
 

@@ -3,4 +3,5 @@ class Station < ApplicationRecord
   validates :railway, presence: true
   validates :name, presence: true
   validates :distance, presence: true
+
 end
