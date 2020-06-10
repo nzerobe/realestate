@@ -28,17 +28,17 @@
 
 <p>
   
-  <% @property.stations.order(:distance).limit(1).each do |f| %>
-    <h3>Nearest station 1</h3>
-    Name of railway line: <%=f.railway%> <br>
-    Station name: <%=f.name%><br>
-    How many minutes walk: <%=f.distance%> min/mins
+  <% @property.stations.where.not(distance: !nil).order(:distance).limit(1).each do |f| %>
+      <h3>Nearest station 1</h3>
+      Name of railway line: <%=f.railway%> <br>
+      Station name: <%=f.name%><br>
+      How many minutes walk: <%=f.distance%> min/mins
   <%end%>
-  <% @property.stations.order(:distance).limit(1).offset(1).each do |f| %>
-    <h3>Nearest station 2</h3>
-    Name of railway line: <%=f.railway%> <br>
-    Station name: <%=f.name%><br>
-    How many minutes walk: <%=f.distance%> min/mins
+  <% @property.stations.where.not(distance: !nil).order(:distance).limit(1).offset(1).each do |f| %>
+      <h3>Nearest station 2</h3>
+      Name of railway line: <%=f.railway%> <br>
+      Station name: <%=f.name%><br>
+      How many minutes walk: <%=f.distance%> min/mins
   <%end%>
 </p>
 

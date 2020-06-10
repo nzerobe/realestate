@@ -36,9 +36,10 @@
     <%= form.text_area :remarks %>
   </div>
   <hr>
- 
+  
   <%= form.fields_for :stations do |station|%>
-    <h3>Name of Railway</h3>
+   <h3>Name of Railway <%= station.index+1 %></h3>
+   
     <div class="field">
       <%= station.label :railway, "Name of railway line" %>
       <%= station.text_field :railway %>
